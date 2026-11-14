@@ -65,6 +65,7 @@ bump_version js/plugins/vercel-ai @genkit-ai/vercel-ai vercel-ai-v
 bump_version js/plugins/anthropic @genkit-ai/anthropic anthropic-v
 bump_version js/plugins/a2ui @genkit-ai/a2ui a2ui-v
 bump_version js/plugins/otel @genkit-ai/otel otel-v
+bump_version js/plugins/voyageai @genkit-ai/voyageai voyageai-v
 
 echo TAGS "${TAGS[*]}"
 
