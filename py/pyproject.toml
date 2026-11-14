@@ -33,6 +33,7 @@ dependencies = [
   "genkit-a2ui",
   "genkit-ollama",
   "genkit-vertexai",
+  "genkit-voyageai",
 ]
 description = "Workspace for Genkit packages"
 license = "Apache-2.0"
@@ -185,6 +186,7 @@ genkit-otel         = { workspace = true }
 genkit-a2ui         = { workspace = true }
 genkit-ollama       = { workspace = true }
 genkit-vertexai     = { workspace = true }
+genkit-voyageai     = { workspace = true }
 
 [tool.uv.workspace]
 exclude = ["*/shared"]
@@ -381,7 +383,7 @@ unauthorized_licenses = [
 ]
 
 [tool.liccheck.authorized_packages]
-aiohappyeyeballs      = "2.6.1"    # Python Software Foundation (transitive dep of xai-sdk)
+aiohappyeyeballs      = ">=2.6.1"  # Python Software Foundation (transitive dep of xai-sdk and voyageai)
 aiohttp               = "3.13.3"   # Apache-2.0 AND MIT (transitive dep of xai-sdk)
 certifi               = "2026.1.4" # TODO: Verify.
 dependencies          = true
@@ -389,6 +391,7 @@ dotpromptz-handlebars = "0.2.0"    # Apache-2.0 "https://github.com/google/dotpr
 google-crc32c         = "1.8.0"    # Apache-2.0
 mistralai             = ">=1.9.11" # Apache-2.0 "https://github.com/mistralai/client-python/blob/main/LICENSE"
 multidict             = "6.7.0"    # Apache-2.0
+numpy                 = ">=2.4.2"  # BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0 (transitive dep of voyageai)
 ollama                = "0.5.1"    # MIT "https://github.com/ollama/ollama-python/blob/main/LICENSE"
 pyasn1                = "0.6.2"    # BSD-2-Clause
 
@@ -421,6 +424,7 @@ root = [
   "packages/genkit-a2ui/src",
   "packages/genkit-ollama/src",
   "packages/genkit-vertexai/src",
+  "packages/genkit-voyageai/src",
   ".",  # For samples.shared and other root-level imports
 ]
 
@@ -460,6 +464,7 @@ extraPaths = [
   "packages/genkit-a2ui/src",
   "packages/genkit-ollama/src",
   "packages/genkit-vertexai/src",
+  "packages/genkit-voyageai/src",
 ]
 pythonVersion = "3.10"
 reportMissingImports = true
@@ -511,6 +516,7 @@ search-path = [
   "packages/genkit-a2ui/src",
   "packages/genkit-ollama/src",
   "packages/genkit-vertexai/src",
+  "packages/genkit-voyageai/src",
   ".",
 ]
 python_version = "3.10"

@@ -47,6 +47,7 @@ PLUGIN_PACKAGES = (
     'genkit_ollama',
     'genkit_openai',
     'genkit_vertexai',
+    'genkit_voyageai',
 )
 
 COMMON_FIELDS = frozenset(name for name in ModelConfig.model_fields if name != 'extra')

@@ -90,6 +90,7 @@ ollama                = ["genkit-ollama>=0.13.0,<2"]
 openai                = ["genkit-openai>=0.13.0,<2"]
 vertex-ai             = ["genkit-vertexai[anthropic,openai]>=0.13.0,<2"]
 vertexai              = ["genkit-vertexai[anthropic,openai]>=0.13.0,<2"]
+voyageai              = ["genkit-voyageai>=0.13.0,<2"]
 
 [project.urls]
 "Bug Tracker"   = "https://github.com/genkit-ai/genkit/issues"
@@ -120,6 +121,7 @@ DEP002 = [
   "genkit-openai",
   "genkit-otel",
   "genkit-vertexai",
+  "genkit-voyageai",
 ]
 # Standard library on Python 3.14+; imported behind a version check.
 DEP001 = ["annotationlib"]
@@ -144,3 +146,4 @@ genkit-otel                         = { workspace = true }
 genkit-ollama                       = { workspace = true }
 genkit-openai                       = { workspace = true }
 genkit-vertexai                     = { workspace = true }
+genkit-voyageai                     = { workspace = true }
