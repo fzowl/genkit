@@ -67,6 +67,7 @@ JS_PACKAGES=(
   js/plugins/vercel-ai
   js/plugins/a2ui
   js/plugins/otel
+  js/plugins/voyageai
 )
 
 # CLI tooling packages to publish, relative to the repo root.
